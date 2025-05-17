@@ -1,0 +1,20 @@
+<script>
+    let url = location.href;
+    console.log(url + " " +typeof(url)); //splite return array 
+    let strsplite = url.split("/");
+    console.log(strsplite);
+    let lastIndexValue = strsplite[strsplite.length-1]; //strsplite[8-1] => split[1]
+    console.log(lastIndexValue); //filename
+
+    let ext = lastIndexValue.split(".");
+    console.log(ext);
+    let extIndexValue = ext[ext.length-1];
+    console.log(extIndexValue);
+
+    
+
+    let add = (n1=10,n2=20)=>{
+        console.log(n1+n2);
+    }
+    add(20,30);
+</script>

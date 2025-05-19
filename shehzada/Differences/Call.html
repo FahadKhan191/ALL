@@ -1,0 +1,11 @@
+<script>
+    var employee1 = {firstName: 'Fahad', lastName: 'Khan'};
+    var employee2 = {firstName: 'Hassan', lastName: 'Sab'};
+
+    function invite(greeting1, greeting2){
+        console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
+    }
+
+    invite.call(employee1, 'Hello', 'How Are You?'); // Hello Fahad Khan, How Are You?
+    invite.call(employee2, 'Hello', 'How Are You?'); // Hello Hassan Sab, How Are You?
+</script>
